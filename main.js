@@ -19,7 +19,8 @@ function createWindow() {
 
     if (mode === 'dev') {
         // and load the index.html of the app.
-        mainWindow.loadFile('index.html')
+        // mainWindow.loadFile('index.html')
+        mainWindow.loadURL("http://localhost:3000")
     } else {
         mainWindow.loadURL(url.format({
             pathname:path.join(__dirname, './build/index.html'),
